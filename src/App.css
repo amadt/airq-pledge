@@ -1,38 +1,214 @@
+body {
+  background-color: black;
+}
+
 .App {
-  text-align: center;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:focus {
+  outline: none
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:disabled {
+  color: #555555
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  border: none;
+  background: none;
+  color: white;
+  text-align: left;
+  display: block;
+  cursor: pointer;
+}
+
+.Content {
+  height: 668px;
+  width: 924px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+}
+
+.Title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 110px;
+}
+
+.Main {
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.ChooseThree {
+  position: relative;
+  top: -50px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.ToHelp {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.Question {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+
+.QuestionB {
+  font-size: 44px;
+}
+
+.ActionButton {
+  font-size: 50px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.Navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SmallActionButton {
+  font-size: 25px;
+  text-transform: lowercase;
+  margin-bottom: 50px;
+}
+
+.SmallActionUnderline {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.AirQualityLink {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.SurveyBody {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.SurveyText {
   color: white;
+  width: 700px;
+  background-color: #222222;
+  border: none;
+  margin: 20px 0px;
+  height: 40px;
+  font-size: 16px
 }
 
-.App-link {
-  color: #61dafb;
+.RightAlignButton {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.OptionBar {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.OptionLabel {
+  margin-left: 32px;
+  font-size: 36px;
+}
+
+.OptionCheckBack {
+  margin-top: 5px;
+  position: relative;
+  min-width: 36px;
+  min-height: 36px;
+  width: 36px;
+  height: 36px;
+  border: solid white 2px;
+}
+
+/* Create a custom checkbox */
+.OptionCheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+}
+
+/* Style the checkmark/indicator */
+.OptionCheckBack .OptionCheckmark:after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 3px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.OptionSubmit {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.PledgeLine {
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+.PledgePoint {
+  display: inline-block;
+  width: 60px;
+}
+
+.Community {
+  position: relative;
+  top: -40px;
+}
+
+.CommunityRow {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.CommunityItem {
+  display: inline-block;
+  font-size: 26px;
+  width: 300px;
+}
+
+.CommunityBar {
+  display: inline-block;
+  height: 20px;
+  background-color: white;
+}
+
+.CommunityCount {
+  margin-left: 12px;
+  font-size: 16px;
 }
